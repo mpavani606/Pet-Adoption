@@ -1,0 +1,13 @@
+import { Router } from 'express';
+import { protect, authorize } from '../middleware/auth.js';
+import { approveRequest, createRequest, deleteRequest, getRequest, listRequests, mine, updateRequest } from '../controllers/requestController.js';
+const router = Router();
+router.use(protect);
+router.get('/mine', mine);
+router.get('/', authorize('shelter', 'admin'), listRequests);
+router.post('/', createRequest);
+router.get('/:id', getRequest);
+router.put('/:id', updateRequest);
+router.delete('/:id', deleteRequest);
+router.patch('/:id/approve', approveRequest);
+export default router;

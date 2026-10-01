@@ -1,0 +1,6 @@
+export const demoPets = [
+  { _id: 'milo', name: 'Milo', type: 'Dog', breed: 'Beagle mix', age: 2, gender: 'Male', status: 'available', description: 'A bright, happy trail buddy with an excellent sit and a soft spot for squeaky toys.', photoUrl: 'https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=85' },
+  { _id: 'luna', name: 'Luna', type: 'Cat', breed: 'Domestic shorthair', age: 4, gender: 'Female', status: 'available', description: 'Quietly confident and endlessly curious. Luna would love a sunny windowsill and a calm home.', photoUrl: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=900&q=85' },
+  { _id: 'archie', name: 'Archie', type: 'Dog', breed: 'Golden retriever', age: 5, gender: 'Male', status: 'available', description: 'The gentle host of every room. Archie knows how to make new friends feel at home.', photoUrl: 'https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=900&q=85' },
+  { _id: 'pepper', name: 'Pepper', type: 'Cat', breed: 'Tuxedo', age: 1, gender: 'Female', status: 'available', description: 'Small, playful, and full of opinions. Pepper is ready to turn your house into a home.', photoUrl: 'https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=900&q=85' }
+];

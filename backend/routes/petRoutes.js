@@ -1,0 +1,12 @@
+import { Router } from 'express';
+import { authorize, protect } from '../middleware/auth.js';
+import { availablePets, createPet, deletePet, getPet, listPets, searchPets, updatePet } from '../controllers/petController.js';
+const router = Router();
+router.get('/search', searchPets);
+router.get('/available', availablePets);
+router.get('/', listPets);
+router.get('/:id', getPet);
+router.post('/', protect, authorize('shelter', 'admin'), createPet);
+router.put('/:id', protect, authorize('shelter', 'admin'), updatePet);
+router.delete('/:id', protect, authorize('shelter', 'admin'), deletePet);
+export default router;
